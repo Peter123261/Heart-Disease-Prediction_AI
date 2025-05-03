@@ -1,0 +1,10 @@
+Random Search Model Performance Comparison
+==================================================
+XGBoost: 0.8475
+SVM: 0.8136
+Decision Tree: 0.7288
+Random Forest: 0.8305
+Logistic Regression: 0.8136
+
+Best Model: XGBoost with Accuracy: 0.8475
+Best Model saved as: random_search_best_model.pkl

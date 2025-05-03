@@ -1,0 +1,9 @@
+
+Model Performance Comparison:
+XGBoost: 0.8475
+SVM: 0.8136
+Decision Tree: 0.7627
+Random Forest: 0.7966
+Logistic Regression: 0.8136
+
+Best Model: XGBoost with Accuracy: 0.8475
