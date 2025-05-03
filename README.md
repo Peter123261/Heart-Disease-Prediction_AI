@@ -1,6 +1,7 @@
- "> **AI-Powered Heart Disease Risk Detection for Smarter Healthcare Decisions 🫀📊**\n\n"
-        "# Heart Disease Prediction Model 🩺🚀\n\n"
-        "A complete machine learning pipeline that predicts the risk of heart disease using clinical data, achieving over **91% accuracy**. "
+ AI-Powered Heart Disease Risk Detection for Smarter Healthcare Decisions 🫀📊
+        
+        Heart Disease Prediction Model 🩺🚀
+        A complete machine learning pipeline that predicts the risk of heart disease using clinical data, achieving over **91% accuracy.
         "The model is trained and evaluated using multiple classifiers with advanced hyperparameter tuning and supports deployment via Flask or Streamlit.\n\n"
         
         "## 📚 Project Overview\n"
