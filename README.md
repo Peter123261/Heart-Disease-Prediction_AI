@@ -1,70 +1,95 @@
- AI-Powered Heart Disease Risk Detection for Smarter Healthcare Decisions 🫀📊
-        
-        Heart Disease Prediction Model 🩺🚀
-        A complete machine learning pipeline that predicts the risk of heart disease using clinical data, achieving over **91% accuracy.
-        "The model is trained and evaluated using multiple classifiers with advanced hyperparameter tuning and supports deployment via Flask or Streamlit.\n\n"
-        
-        "## 📚 Project Overview\n"
-        "- **Problem**: Predict heart disease presence using structured medical features.\n"
-        "- **Solution**: Built and evaluated multiple ML models using Grid Search and Random Search. Best-performing model achieved high accuracy and F1-score.\n"
-        "- **Dataset**: Processed from Hungarian heart disease dataset (14 clinical features).\n"
-        "- **Deployment Ready**: Includes Flask API and Streamlit app for real-time prediction.\n\n"
-        
-        "## 📦 Repository Structure\n"
-        "```bash\n"
-        "heart-disease-prediction/\n"
-        "├── data/\n"
-        "│   └── processed_hungarian.csv\n"
-        "├── models/\n"
-        "│   ├── heart_disease_model.pkl\n"
-        "│   └── scaler.pkl\n"
-        "├── notebooks/\n"
-        "│   └── model_development.ipynb\n"
-        "├── output/\n"
-        "│   └── confusion_matrix.png\n"
-        "└── docs/\n"
-        "    └── random_search_report.txt\n"
-        "```\n\n"
+> **"Smarter Health Starts With Smarter Predictions 🧠❤️"**
 
-        "## 📊 Model Performance\n"
-        "| Metric     | Value   |\n"
-        "|------------|---------|\n"
-        "| Accuracy   | 0.91    |\n"
-        "| Precision  | 0.92 (Class 1) |\n"
-        "| Recall     | 0.83 (Class 1) |\n"
-        "| F1-Score   | 0.87 (Class 1) |\n\n"
-        "✅ Model evaluated using unseen test set\n"
-        "✅ Confusion matrix and classification report generated\n"
-        "✅ Visual outputs saved in `/output/`\n\n"
+# Heart Disease Prediction Model 🩺🔍
 
-        "## 🧠 Key Techniques Used\n"
-        "- Supervised classification with 5 ML models\n"
-        "- Grid and Random Search for hyperparameter tuning\n"
-        "- Missing value handling and feature scaling\n"
-        "- PCA (optional) for dimensionality reduction\n"
-        "- Deployment scripts for Flask and Streamlit\n\n"
+A complete machine learning pipeline designed to predict the likelihood of heart disease using real-world clinical data. This project features robust preprocessing, model tuning, evaluation, and deployment using modern tools like Flask and Streamlit.
 
-        "## 🚀 How to Run\n"
-        "1. Install dependencies:\n"
-        "   ```bash\n"
-        "   pip install -r requirements.txt\n"
-        "   ```\n\n"
-        "2. Train or load the model from `models/` folder\n"
-        "3. Launch API:\n"
-        "   ```bash\n"
-        "   python app.py\n"
-        "   ```\n"
-        "4. Or launch the web app with:\n"
-        "   ```bash\n"
-        "   streamlit run streamlit_app.py\n"
-        "   ```\n\n"
+---
 
-        "## 🧩 Future Enhancements\n"
-        "- Host model on Streamlit Cloud or Render\n"
-        "- Add patient-level visualization insights\n"
-        "- Add REST endpoint for batch predictions\n\n"
+## 📁 Repository Structure
 
-        "## 📬 Contact\n"
-        "- **Author**: [Peter Olamojin]\n"
-        "- **GitHub**: [@yourusername](https://github.com/Peter123261)\n"
-        "- **Email**: [olapeter1010@gmail.com
+```
+.
+├── Data/                   # Raw and processed datasets
+│   └── processed_hungarian.csv
+├── Output/                 # Evaluation results
+│   └── confusion_matrix.png
+├── Models/                 # Saved model and scaler
+│   ├── heart_disease_model.pkl
+│   └── scaler.pkl
+├── Notebook/               # Jupyter notebooks for development
+│   └── model_training.ipynb
+├── deployment task/        # Deployment scripts
+│   ├── app.py              # Flask API
+│   └── streamlit_app.py    # Streamlit frontend
+├── requirements.txt        # Python dependencies
+└── README.md               # Project overview (this file)
+```
+
+---
+
+## 🧠 Key Features
+- End-to-end ML pipeline (cleaning → training → saving)
+- Multiple models trained and tuned (XGBoost, RF, SVM, etc.)
+- Hyperparameter optimization with Grid and Random Search
+- Evaluation with accuracy, precision, recall, F1-score
+- Confusion matrix visualization saved to `/Output`
+- Flask API + Streamlit app for interactive predictions
+
+---
+
+## 📊 Model Performance
+| Metric     | Score     |
+|------------|-----------|
+| Accuracy   | 0.91      |
+| Precision  | 0.92 (Class 1) |
+| Recall     | 0.83 (Class 1) |
+| F1-Score   | 0.87 (Class 1) |
+
+✅ Evaluation saved as: `Output/confusion_matrix.png`
+📄 Report: `docs/random_search_report.txt`
+
+---
+
+## 🚀 How to Run the Project
+
+### 🔧 Step 1: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 🧪 Step 2: Run the Flask API (Local Deployment)
+```bash
+python deployment task/app.py
+```
+
+### 🖥️ Step 3: Run the Streamlit App (Frontend)
+```bash
+streamlit run deployment task/streamlit_app.py
+```
+
+---
+
+## 📦 Model Usage in Code
+```python
+import pickle, pandas as pd
+model = pickle.load(open("Models/heart_disease_model.pkl", "rb"))
+scaler = pickle.load(open("Models/scaler.pkl", "rb"))
+input_data = pd.DataFrame([[63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0, 1]], columns=[...])
+input_scaled = scaler.transform(input_data)
+prediction = model.predict(input_scaled)
+```
+
+---
+
+## 📈 Future Improvements
+- Host on Streamlit Cloud / Render
+- Add patient-level visualization insights
+- Extend to multi-class risk levels
+- Deploy with Docker or CI/CD pipelines
+
+---
+
+## 👤 Author
+- **Peter Olamojin**
+- Email: olapeter1010@gmail.com
