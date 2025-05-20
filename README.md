@@ -1,8 +1,8 @@
-> **"Smarter Health Starts With Smarter Predictions 🧠❤️"**
+> **"Smarter Health Starts With Smarter AI Predictions 🧠❤️"**
 
 # Heart Disease Prediction Model 🩺🔍
 
-A complete machine learning pipeline designed to predict the likelihood of heart disease using real-world clinical data. This project features robust preprocessing, model tuning, evaluation, and deployment using modern tools like Flask and Streamlit.
+A complete classification-based machine learning pipeline designed to predict the likelihood of heart disease using real-world clinical data. This project features robust preprocessing, model tuning, evaluation, and deployment using modern tools like Flask and Streamlit.
 
 ---
 
